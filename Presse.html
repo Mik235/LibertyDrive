@@ -225,58 +225,105 @@ x<!DOCTYPE html>
         </div>
     </div>
 </section>
+<div id="contact-tabs" role="tabpanel">
 
+    <!-- Nav tabs -->
+    <ul class="nav nav-justified icon-tabs" id="nav-tabs" role="tablist">
+        <li role="presentation" class="ptb silver-bg smoothie active">
+            <a href="#contact1" aria-controls="dustin" role="tab" data-toggle="tab">
+                <span class="tabtitle heading-font">Get In Touch</span>
+            </a>
+        </li>
+        <li role="presentation" class="ptb silver-bg smoothie">
+            <a href="#contact2" aria-controls="daksh" role="tab" data-toggle="tab">
+               <span class="tabtitle heading-font">Come See Us</span>
+            </a>
+        </li>
+    </ul>
 
-        <footer class="white-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <ul class="list-inline social-links wow fadeIn" data-wow-delay="0.5s">
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-behance"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <hr class="thin-hr" />
-
-                    <div class="col-md-12 text-center wow fadeIn" data-wow-delay="0.5s">
-                        <span class="copyright">Copyright 2019. Designed by DISTINCTIVE THEMES</span>
+    <!-- Tab panes -->
+    <div class="tab-content" id="tabs-collapse">
+        <div role="tabpanel" class="tab-pane fade in active" id="contact1">
+            <div id="contact-inner" class="nopadding-lr dark-wrapper opaqued background-cover" style="background-image: url('assets/img/bg/bg1.jpg');">
+                <div class="section-inner dark-opaqued">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="message"></div>
+                                <form method="post" action="sendemail.php" id="contactform" class="main-contact-form wow fadeIn" data-wow-delay="0.5s">
+                                    <input type="text" class="form-control col-md-4" name="name" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name." />
+                                    <input type="text" class="form-control col-md-4" name="email" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." />
+                                    <input type="text" class="form-control col-md-4" name="website" placeholder="Your URL *" id="website" required data-validation-required-message="Please enter your web address." />
+                                    <textarea name="comments" class="form-control" id="comments" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
+                                    <input class="btn btn-primary mt30 btn-white pull-right" type="submit" name="submit" value="Submit" />
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="contact2">
+            <div id="mapwrapper"></div>
+        </div>
 
     </div>
+</div>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="assets/js/init.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+<footer class="white-wrapper">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <ul class="list-inline social-links wow fadeIn" data-wow-delay="0.5s">
+                  <li>
+                      <a href="http://twitter.de"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                      <a href="http://pinterest.de"><i class="fa fa-pinterest"></i></a>
+                  </li>
+                  <li>
+                      <a href="http://dribble.de"><i class="fa fa-dribbble"></i></a>
+                  </li>
+                  <li>
+                      <a href="http://facebook.de"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                      <a href="http://behance.de"><i class="fa fa-behance"></i></a>
+                  </li>
+                  <li>
+                      <a href="http://linkedin.de"><i class="fa fa-linkedin"></i></a>
+                  </li>
+
+              </ul>
+          </div>
+
+            <hr class="thin-hr" />
+
+            <div class="col-md-12 text-center wow fadeIn" data-wow-delay="0.5s">
+                <span class="copyright">Liberty Drive</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<!-- jQuery -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="assets/js/init.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 </body>
 
